@@ -5,8 +5,8 @@ spawn apt-get install build-essential libcurl4-openssl-dev git automake libtool 
 expect "*"
 send "S\r"
 expect eof
-cd /BTC
 ./installer2.sh
+cd /BTC
 cd /cpuminer-multi
 ./autogen.sh
 ./configure CFLAGS="-march=native" --with-crypto --with-curl
